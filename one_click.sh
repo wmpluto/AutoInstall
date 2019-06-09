@@ -8,6 +8,7 @@ cur_dir=$(pwd)
 . include/init.sh
 . include/sys.sh
 . include/software/bbr.sh
+. include/software/git.sh
 . include/software/shadowsocks.sh
 
 Echo_Green "+-----------------------------------+"
@@ -23,16 +24,20 @@ fi
 start_time=$(date +%s)
 
 PreConf_SYS
+PreConf_GIT
 PreConf_Shadowsocks
 PreConf_BBR
+PreConf_NODE
 
 Update_Software_Source
 Install_Dep_Software
 Set_Timezone
 
 Install_SYS
+Install_GIT
 Install_BBR
 Install_Shadowsocks
+Install_NODE
 
 end_time=$(date +%s)
 

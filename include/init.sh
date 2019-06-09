@@ -26,4 +26,7 @@ Install_Dep_Software()
     apt install -y wget
     Echo_Blue "[+] Installing curl..."
     apt install -y curl
+    Echo_Blue "[+] Installing python2&python3..."
+    apt install -y python
+    apt install -y python3
 }
