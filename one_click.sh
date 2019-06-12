@@ -26,9 +26,11 @@ start_time=$(date +%s)
 PreConf_SYS
 PreConf_GIT
 PreConf_Shadowsocks
+PreConf_KCPTUN
 PreConf_BBR
 PreConf_NODE
 
+Get_IP
 Update_Software_Source
 Install_Dep_Software
 Set_Timezone
@@ -37,6 +39,7 @@ Install_SYS
 Install_GIT
 Install_BBR
 Install_Shadowsocks
+Install_KCPTUN
 Install_NODE
 
 end_time=$(date +%s)

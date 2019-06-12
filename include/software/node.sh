@@ -18,7 +18,7 @@ Install_NODE()
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
     
     Echo_Blue "[+] Installing NODE..."
-    source ~/.bashrc
+    source "/home/$SYS_User/.bashrc"
     nvm install 7.10.0
     Configure_NODE
 }

@@ -1,5 +1,11 @@
 #!/bin/bash
 
+Get_IP()
+{
+    IP=`wget http://ipecho.net/plain -O - -q ; echo`
+    echo $IP
+}
+
 Set_Timezone()
 {
     Echo_Blue "Setting timezone..."
